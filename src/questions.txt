@@ -1,0 +1,16 @@
+what exactly is extra junk?
+how/why
+    null-pointer-optimized(good)
+        enum Foo {
+            A,
+            B(NotOnlyAPointer),
+            C(zero or more)
+        }
+    not-null-pointer-optimized(bad)
+        enum Foo {
+            A,
+            B(OnlyAPointer),
+        }
+
+
+    
