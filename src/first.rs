@@ -1,4 +1,5 @@
 use std::mem;
+
 pub struct List {
     head: Link,
 }
@@ -24,7 +25,7 @@ impl List {
             }
         }
     }
-    pub fn pop_node(&mut self) -> Link {
+    fn _pop_node(&mut self) -> Link {
         // let mut cur_link = mem::replace(&mut self.head, Link::Empty);
         // match Link::More(mut boxed_node) = cur_link {
         //     Link::Empty => Link::Empty,
@@ -34,7 +35,7 @@ impl List {
         //         Link::More(node)
         //     }
         // }
-        Link::Empty;
+        Link::Empty
     }
 }
 
